@@ -1,0 +1,64 @@
+<html>
+<head>
+   <% include partials/Head.ejs %>
+</head>
+<body>
+   <% include partials/Navigation.ejs %>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <p  class="headingfont" align="center">
+           <%= headline %>
+         </p>
+         <style> .headingFont{
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 40px;
+         }
+         img{
+           border-radius: 50%;
+           }
+
+           * {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+
+   .thumbnail{
+     position: relative;
+
+     border: 1px solid #333;
+     margin: 2%;
+     overflow: hidden;
+    
+   }
+   .thumbnail img {
+
+
+     -moz-transition: all 0.3s;
+     -webkit-transition: all 0.3s;
+     transition: all 0.3s;
+   }
+   .thumbnail:hover img {
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+   }
+            </style>
+
+   <div class="container">
+         <div class="row">
+             <% for(var i=1;i<=numberOfImages;i++) {%>
+             <div class="col-md-4">
+                <div class="thumbnail">
+                <img src="/images/<%=cityName%>/<%=cityName%>-<%=i%>.jpg" style="width:350px;height:250px;">
+                </div>
+             </div>
+             <%}%>
+         </div>
+    </div>
+   <% include partials/Footer.ejs %>
+</body>
+</html>

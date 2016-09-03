@@ -1,0 +1,28 @@
+{
+  "name": "mycity",
+  "version": "1.0.0",
+  "description": "Shows different cities.",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.1",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "city"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palepnaren/node-MyCity.git"
+  },
+  "keywords": [
+    "mycity",
+    "ejs"
+  ],
+  "author": "Naren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palepnaren/node-MyCity/issues"
+  },
+  "homepage": "https://github.com/palepnaren/node-MyCity#readme"
+}
